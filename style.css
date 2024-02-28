@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	color: gold;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #cbcbcb;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	height: 150px;
+	width: 200px;
+}
+
+/* flex-shrink: 1; domyslnie - moga sie kurczyc*/
+
+/* flex-grow: 0; domyslnie - nie moga rosnac*/
+
+.one {
+	background-color: red;
+	flex-basis: 100px;
+	flex-grow: 0;
+	order: -14;
+}
+.two {
+	background-color: lime;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: -18;
+}
+.three {
+	background-color: orange;
+	order: -19;
+	flex-grow: 1;
+
+	width: 400px;
+}
+
+.four {
+	background-color: royalblue;
+	order: -17;
+}
+
+.five {
+	background-color: #ffffff;
+	flex-basis: 100px;
+	order: -16;
+	flex-grow: 1;
+
+}
+
+.six {
+	background-color: yellow;
+	flex-grow: 0;
+	flex-shrink: 1;
+	width: 400px;
+	order: -15;
+	align-self: flex-end;
+}
+.seven {
+	background-color: rgb(79, 73, 73);
+	flex-grow: 0;
+	order: -20;
+}
+
+.nine {
+	background-color: #17c2b9;
+	order: -17;
+}
+
+.ten {
+	background-color: purple;
+	flex-grow: 3;
+}
+
+.eleven {
+	background-color: tomato;
+	flex-shrink: 2;
+
+}
+.twelve {
+	background-color: rgb(14, 74, 194);
+
+}
