@@ -106,3 +106,9 @@ h1 {
 	background-color: rgb(14, 74, 194);
 
 }
+
+
+
+.active {
+	font-size: 10px;
+}
